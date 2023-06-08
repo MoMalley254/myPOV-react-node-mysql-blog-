@@ -4,6 +4,8 @@
     background-color: rgb(253, 236, 215);
     margin: 30px;
     border-radius: 15px;
+    /* position: static;
+    top: 50px; */
 }
 .sidebar .aboutHead h4 {
     text-align: center;
@@ -78,6 +80,7 @@
     margin: 5px 0;
     border-radius: 5px;
 }
+
 .sidebar .friends .friendsList li a {
     display: flex;
     /* justify-content: space-between; */
@@ -86,6 +89,10 @@
     width: 60px;
     height: 60px;
     flex: 3;
+    transition: border-radius 200ms ease-in-out;
+}
+.sidebar .friends .friendsList li:hover a img  {
+    border-radius: 0;
 }
 .sidebar .friends .friendsList li a .friendInfo {
     font-family: 'Varela Round', sans-serif;
@@ -96,6 +103,7 @@
     text-align: center;
     color: rebeccapurple;
     font-weight: bold;
+    transition: all 200ms ease-in-out;
 }
 .sidebar .friends .friendsList li a .friendInfo p {
     font-family: 'Lato', sans-serif;
@@ -106,4 +114,12 @@
     color: gray;
     font-weight: lighter;
     font-style: italic;
+    transition: all 200ms ease-in-out;
+}
+.sidebar .friends .friendsList li:hover a .friendInfo h5 {
+    color: palevioletred;
+}
+.sidebar .friends .friendsList li:hover a .friendInfo p {
+    color: black;
+    font-style: normal;
 }
