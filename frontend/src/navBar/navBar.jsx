@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import './navBar.css';
 
 export default function NavBar() {
   return (
-    <div className="navBar">
-      <NavLeft />
-      <NavCenter />
-      <NavRight />
+    <div className="topbar">
+      <div className="navBar">
+        <NavLeft />
+        <NavCenter />
+        <NavRight />
+      </div>
     </div>
+    
   );
 }
 
@@ -140,3 +143,14 @@ function NavRight() {
     </div>
   );
 }
+
+// function BelowNav () {
+//   const [isHovered, setIsHovered] = useState(false);
+
+//   const handleHover = () => {
+//     setIsHovered(true);
+//     console.log('hovered');
+
+//   } 
+  
+// }

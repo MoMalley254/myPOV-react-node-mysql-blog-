@@ -16,3 +16,14 @@ a, p, span {
   font-size: 16px;
   font-weight: normal;
 }
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  outline-width: 0;
+}
