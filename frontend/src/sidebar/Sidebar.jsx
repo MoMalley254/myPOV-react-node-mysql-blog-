@@ -9,6 +9,11 @@ import friendPic3 from '../assets/images/r2d2.jpeg';
 export default function Sidebar() {
   return (
     <div className="sidebar">
+        <div className="aboutHead">
+            <hr />
+            <h4>About Me</h4>
+            <hr />
+        </div>
       <div className="profileImage">
         <img src={profilePic} alt="" />
       </div>
@@ -66,6 +71,16 @@ export default function Sidebar() {
               transition={1000}
             >
                 <a href="#">The Force</a>
+            </motion.li>
+            <motion.li className="categoryItem" 
+                whileHover={{
+                scale: .9,
+                backgroundColor: "#fae6c5",
+                border: "1px solid red"
+              }}
+              transition={1000}
+            >
+                <a href="#">DarkSide</a>
             </motion.li>
             <motion.li className="categoryItem" 
                 whileHover={{
